@@ -1,0 +1,12 @@
+{
+	"imports": {
+		"preact": "https://esm.sh/preact@10.13.2",
+		"preact/": "https://esm.sh/preact@10.13.2/",
+		"cliffy": "https://deno.land/x/cliffy@v0.25.7/mod.ts",
+		"preact-render-to-string": "https://esm.sh/preact-render-to-string@5.2.6",
+		"@std/": "https://deno.land/std@0.184.0/",
+		"@esm/": "https://esm.sh/",
+		"@ejm/": "https://ejm.sh/",
+		"@ejsm/": "https://ejm.sh/esm.sh/"
+	}
+}

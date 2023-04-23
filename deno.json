@@ -1,0 +1,19 @@
+{
+	"fmt": {
+		"options": {
+			"useTabs": true,
+			"singleQuote": true,
+			"semiColons": false,
+			"indentWidth": 4
+		}
+	},
+	"tasks": {
+		"cli": "deno run --allow-read --allow-write --allow-net ./mod.ts",
+		"install": "deno install --allow-read --allow-write --allow-net -r -q -f --no-check -n mdex ./mod.ts"
+	},
+	"importMap": "./import_map.json",
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact"
+	}
+}

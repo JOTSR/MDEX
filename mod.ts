@@ -8,7 +8,7 @@ import { render } from './src/render.ts'
 if (import.meta.main) {
 	const cli = new Command()
 		.name('mdex')
-		.version('0.1.0')
+		.version('0.1.2')
 		.description('Compile and render MDX file from Deno')
 		.command('compile', compile)
 		.command('render', render)

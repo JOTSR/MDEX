@@ -32,7 +32,6 @@ export function Template(
                     main {
                         max-width: 800px;
                         margin: 0 auto;
-                        width: 100%;
                         background-color: initial;
                         padding: 2rem;
                         border-radius: 7px;

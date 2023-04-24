@@ -9,7 +9,7 @@
 	},
 	"tasks": {
 		"cli": "deno run --allow-read --allow-write --allow-net ./mod.ts",
-		"install": "deno install --allow-read --allow-write --allow-net -r -q -f --no-check -n mdex ./mod.ts"
+		"install": "deno install --allow-read --allow-write --allow-net -r -q -f --no-check --import-map https://deno.land/x/mdex/import_map.json -n mdex ./mod.ts"
 	},
 	"importMap": "./import_map.json",
 	"compilerOptions": {

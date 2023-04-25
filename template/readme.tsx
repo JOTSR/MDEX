@@ -1,3 +1,4 @@
+/* @jsxImportSource preact */
 import { CSS, KATEX_CSS } from 'https://deno.land/x/gfm@0.2.1/mod.ts'
 import { JSX } from 'preact/jsx-runtime'
 //@ts-ignore ejm default export

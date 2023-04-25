@@ -2,6 +2,7 @@ import renderSSR from 'preact-render-to-string'
 import { expandGlobSync } from '@std/fs/mod.ts'
 import { compiler } from './compile.ts'
 import { Command } from 'cliffy'
+import { parse } from '@std/path/mod.ts'
 
 export async function renderer(
 	{ input, output, template, config }: {
@@ -15,8 +16,10 @@ export async function renderer(
 	const { default: MdxContent } = await import(
 		`data:text/jsx,${encodeURIComponent(await compiler({ input, config }))}`
 	)
+	const { name } = parse(input)
+
 	const html = renderSSR(
-		Template({ children: MdxContent(), title: 'main' }),
+		Template({ children: MdxContent(), title: name }),
 	)
 
 	if (output !== undefined) {
